@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- meta -->
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="images/favicon.png" type="image/x-icon">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="développeur, indépendant, étudiant, Lyon, web, html, css, javascript, php, java, python, Rubik's Cube, tutoriel, résolution, méthode, exposant, exposition, formateur, formation, bricolage, réparation, tourne-disque, vinyle">
-        <title>Accueil - Julien Giraud Développeur</title>
         <meta name="description" content="Julien Giraud website est mon site de présentation. Étudiant en informatique à Lyon 1, je suis développeur indépendant, formateur / exposant en Rubik's Cube et bricoleur improbable.">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/icons.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/variables.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <!-- JS -->
+        
+        <!-- autre -->
+        <title>Accueil - Julien Giraud Développeur</title>
+        <link rel="icon" href="images/icones/favicon.png" type="image/x-icon">
     </head>
 
     <body>
         <header>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                
-                <li>
-                    <a href="#">Développeur</a>
-                    <ul>
-                        <li><a href="#">Développeur web Full Stack</a></li>
-                        <li><a href="#">Mes projets informatiques</a></li>
+            <nav class="navbar" aria-label="main navigation">
+                <div class="navbar-container">
+                    <a class="brand" href="index.html">Accueil</a>
+                    <ul class="navbar-items">
+                        <li class="navbar-item has-dropdown">
+                            <a href="javascript:void(0)">
+                                <img src="images/icones/code.svg" alt="icone code" class="icon mr-2">
+                                Développement
+                                <i class="ml-2 fa fa-angle-down fa-lg bold"></i>
+                            </a>
+                            <ul class="navbar-items">
+                                <li class="navbar-item"><a href="#" class="">Développement web</a></li>
+                                <li class="navbar-item"><a href="#" class="">Développement logiciel</a></li>
+                                <hr class="navbar-divider">
+                                <li class="navbar-item"><a href="#" class="">Mes projets</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="navbar-item has-dropdown">
+                            <a href="javascript:void(0)">
+                                <img src="images/icones/cube.svg" alt="icone rubik's cube" class="icon mr-2">
+                                Rubik's Cube
+                                <i class="ml-2 fa fa-angle-down fa-lg bold"></i>
+                            </a>
+                            <ul class="navbar-items">
+                                <li class="navbar-item"><a href="#" class="">Exposant - Jeux M'amuse</a></li>
+                                <li class="navbar-item"><a href="#" class="">Formateur</a></li>
+                                <hr class="navbar-divider">
+                                <li class="navbar-item"><a href="#" class="">Mes réalisations</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="navbar-item"><a href="#">
+                            <img src="images/icones/prise-electrique.svg" alt="icone prise electrique" class="icon mr-2">
+                            Réparations
+                        </a></li>
+
+                        <li class="navbar-item"><a href="#">
+                            <img src="images/icones/message.svg" alt="icone message" class="icon mr-2">
+                            Contact
+                        </a></li>
                     </ul>
-                </li>
-                
-                <li>
-                    <a href="#">Rubik's Cube</a>
-                    <ul>
-                        <li><a href="#">Exposant au Jeux M'amuse</a></li>
-                        <li><a href="#">Formation</a></li>
-                        <li><a href="#">Projets en rapport avec le Rubik's Cube</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="#">Bricolage</a></li>
-            </ul>
+                </div>
+            </nav>
         </header>
 
-        <section>
-            <h1>Hello World!</h1>
+        <section class="section">
+            <div class="container">
+                <h1>Hello World!</h1>
+                <p class="subtitle">My first <strong>website</strong>!</p>
+            </div>
         </section>
 
         <footer>
             <p>Le footer ici</p>
         </footer>
 
+        <!-- footer JS -->
         <script src="javascript/main.js"></script>
     </body>
 </html>
