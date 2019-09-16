@@ -1,5 +1,14 @@
 function start() {
     navbar();
+    burger();
+}
+
+function burger() {
+    var c = document.getElementById("navbar-burger");
+
+    c.addEventListener('click', function() {
+        c.classList.toggle("is-active");
+    });
 }
 
 function navbar() {

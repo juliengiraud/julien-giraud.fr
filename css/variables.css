@@ -1,38 +1,40 @@
-/* Variables globales */
+/* Variables générales - Écran "xl" : toujours actif à partir de 1200px */
 :root {
     /* navbar */
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    --navbar-height: 80px;
+    --navbar-flex-direction: row;
+    --navbar-height: var(--navbar-line-height);
     --navbar-items-box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     --navbar-items-margin-top: calc(var(--navbar-height) - 20px);
     --navbar-items-padding-y: 0.5em;
+    --navbar-line-height: 80px;
     --navbar-links-hover-decallage: 0.3em;
     --navbar-links-padding-x: 1em;
     --navbar-links-transition: all 0.2s;
-    --navbar-transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.3s
-}
+    --navbar-transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.3s;
 
-/* Écran "xl" */
-@media (min-width: 1200px) {
-    :root {
-    }
+    /* navbar burger */
+    --navbar-burger-display: none;
 }
 
 /* Écran "lg" */
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
     :root {
     }
 }
 
 /* Écran "md" */
-@media (min-width: 768px) {
+@media (max-width: 991px) {
     :root {
+        --navbar-burger-display: block;
+        --navbar-flex-direction: column;
+        --navbar-height: 500px;
     }
 }
 
 /* Écran "sm" */
-@media (min-width: 576px) {
+@media (max-width: 767px) {
     :root {
     }
 }
