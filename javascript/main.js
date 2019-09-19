@@ -4,30 +4,29 @@ function start() {
 }
 
 function burger() {
-    var c = document.getElementById("navbar-burger");
+    const navbar_burger = document.getElementById("navbar-burger");
 
-    c.addEventListener('click', function() {
-        c.classList.toggle("is-active");
+    navbar_burger.addEventListener('click', function() {
+        navbar_burger.classList.toggle("is-active");
     });
 }
 
 function navbar() {
-    var c = 0,
-    currentScrollTop = 0,
-    navbar = document.querySelector("nav");
+    var a = 0,
+    currentScrollTop = 0;
+    const navbar = document.querySelector("nav");
 
     window.addEventListener('scroll', function() {
-        var a = window.scrollY,
-        b = navbar.clientHeight;
+        var b = window.scrollY;
 
-        if (a == 0) {
+        if (b == 0) {
             navbar.classList.remove("down");
             navbar.classList.add("top");
             navbar.classList.add("up");
         }
         else {
             navbar.classList.remove("top");
-            if (a < c) {
+            if (b < a) {
                 navbar.classList.remove("down");
                 navbar.classList.add("up");
             }
@@ -36,8 +35,8 @@ function navbar() {
                 navbar.classList.add("down");
             }
         }
-        currentScrollTop = a;
-        c = currentScrollTop;
+        currentScrollTop = b;
+        a = currentScrollTop;
     });
 }
 

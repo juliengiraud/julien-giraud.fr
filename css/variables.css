@@ -1,25 +1,30 @@
-/* Variables générales - Écran "xl" : toujours actif à partir de 1200px */
+/* Variables globales */
+
 :root {
     /* navbar */
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    --navbar-flex-direction: row;
-    --navbar-height: var(--navbar-line-height);
     --navbar-items-box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    --navbar-items-margin-top: calc(var(--navbar-height) - 20px);
-    --navbar-items-padding-y: 0.5em;
-    --navbar-line-height: 80px;
     --navbar-links-hover-decallage: 0.3em;
-    --navbar-links-padding-x: 1em;
     --navbar-links-transition: all 0.2s;
     --navbar-transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.3s;
+}
 
-    /* navbar burger */
-    --navbar-burger-display: none;
+@media (min-width: 992px) {
+    /* Écran "xl" */
+    :root {
+        /* navbar */
+        --navbar-burger-display: none;
+        --navbar-container-justify-content: center;
+        --navbar-height: 80px;
+        --navbar-items-margin-top: calc(var(--navbar-height) - 20px);
+        --navbar-items-padding-y: 0.5em;
+        --navbar-links-padding-x: 1em;
+    }
 }
 
 /* Écran "lg" */
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 992px) {
     :root {
     }
 }
@@ -27,9 +32,14 @@
 /* Écran "md" */
 @media (max-width: 991px) {
     :root {
-        --navbar-burger-display: block;
-        --navbar-flex-direction: column;
-        --navbar-height: 500px;
+        /* navbar */
+        --navbar-container-justify-content: space-between;
+        --navbar-container-margin: 0 1em;
+        --navbar-height: 80px;
+        --navbar-items-flex-direction: column;
+        --navbar-items-position: absolute;
+        --navbar-items-padding-y: 0.5em;
+        --navbar-links-padding-x: 1em;
     }
 }
 
