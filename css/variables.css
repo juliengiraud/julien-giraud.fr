@@ -7,7 +7,7 @@
     --navbar-items-box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     --navbar-links-hover-decallage: 0.3em;
     --navbar-links-transition: all 0.2s;
-    --navbar-transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.3s;
+    --navbar-transition: cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -33,12 +33,14 @@
 @media (max-width: 991px) {
     :root {
         /* navbar */
+        --navbar-container-flex-wrap: wrap;
         --navbar-container-justify-content: space-between;
         --navbar-container-margin: 0 1em;
         --navbar-height: 80px;
         --navbar-items-flex-direction: column;
-        --navbar-items-position: absolute;
+        --navbar-items-order: 1;
         --navbar-items-padding-y: 0.5em;
+        --navbar-items-width: 100%;
         --navbar-links-padding-x: 1em;
     }
 }

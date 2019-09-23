@@ -4,7 +4,7 @@ function start() {
 }
 
 function burger() {
-    const navbar_burger = document.getElementById("navbar-burger");
+    const navbar_burger = document.getElementById("navbar");
 
     navbar_burger.addEventListener('click', function() {
         navbar_burger.classList.toggle("is-active");

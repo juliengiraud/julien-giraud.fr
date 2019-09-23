@@ -24,7 +24,6 @@ footer {
     background-color: var(--navbar-bg);
     box-shadow: var(--navbar-box-shadow);
     left: 0;
-    height: var(--navbar-height);
     position: fixed;
     top: 0;
     transition: var(--navbar-transition);
@@ -38,9 +37,10 @@ footer {
 .navbar-container {
     display: flex;
     flex-direction: var(--navbar-flex-direction);
-    height: var(--navbar-height);
+    flex-wrap: var(--navbar-container-flex-wrap);
     justify-content: var(--navbar-container-justify-content);
     margin: var(--navbar-container-margin);
+    max-height: var(--navbar-height);
     overflow: hidden;
     transition: var(--navbar-transition);
 }
@@ -49,7 +49,12 @@ footer {
     height: 0;
 }
 
+.is-active .navbar-container {
+    max-height: 500px;
+}
+
 .navbar .brand {
+    height: var(--navbar-height);
     padding-right: 2em;
     width: max-content;
 }
@@ -82,14 +87,14 @@ footer {
 }
 
 .navbar-items {
-    transform: translateY(238px);
-    
     display: flex;
     flex-direction: var(--navbar-items-flex-direction);
     justify-content: space-around;
     margin: 0;
+    order: var(--navbar-items-order);
     padding: 0;
     position: var(--navbar-items-position);
+    width: var(--navbar-items-width);
 }
 
 .has-dropdown .navbar-items {
@@ -177,31 +182,31 @@ footer {
 
 .burger-inner:after,
 .burger-inner:before {
-    content: ""
+    content: "";
 }
 
 .burger-inner:before {
-    top: -10px
+    top: -10px;
 }
 
 .burger-inner:after {
-    bottom: -10px
+    bottom: -10px;
 }
 
 .burger .burger-inner {
     transition: cubic-bezier(.19, 1, .22, 1) 0.3s;
 }
 
-.burger.is-active .burger-inner {
+#navbar.is-active .burger .burger-inner {
     transform: rotate(765deg);
 }
 
-.burger.is-active .burger-inner:before {
+#navbar.is-active .burger .burger-inner:before {
     top: 0;
-    opacity: 0
+    opacity: 0;
 }
 
-.burger.is-active .burger-inner:after {
+#navbar.is-active .burger .burger-inner:after {
     bottom: 0;
-    transform: rotate(90deg)
+    transform: rotate(90deg);
 }
