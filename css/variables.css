@@ -4,7 +4,10 @@
     /* navbar */
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    --navbar-height: 80px;
     --navbar-items-box-shadow: 0 8px 8px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    --navbar-items-padding-x: 0;
+    --navbar-items-padding-y: 0.5em;
     --navbar-links-hover-decallage: 0.3em;
     --navbar-links-transition: all 0.2s;
     --navbar-transition: cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
@@ -13,13 +16,15 @@
 @media (min-width: 992px) {
     /* Écran "xl" */
     :root {
-        /* navbar */
+        /* navbar burger */
         --navbar-burger-display: none;
+
+        /* navbar */
+        --navbar-brand-padding-x: 1em;
         --navbar-container-justify-content: center;
-        --navbar-height: 80px;
-        --navbar-items-margin-top: calc(var(--navbar-height) - 20px);
-        --navbar-items-padding-y: 0.5em;
+        --navbar-dropdown-items-margin-y: calc(var(--navbar-height) - 20px);
         --navbar-links-padding-x: 1em;
+        --navbar-dropdown-items-position: absolute;
     }
 }
 
@@ -32,16 +37,23 @@
 /* Écran "md" */
 @media (max-width: 991px) {
     :root {
+        /* navbar burger */
+        --burger-padding-x: 1em;
+        --burger-padding-y: 0;
+
         /* navbar */
+        --navbar-brand-padding-x: var(--burger-padding-x);
         --navbar-container-flex-wrap: wrap;
         --navbar-container-justify-content: space-between;
-        --navbar-container-margin: 0 1em;
-        --navbar-height: 80px;
+        --navbar-container-margin-x: 1em;
+        --navbar-container-margin-y: 0;
+        --navbar-dropdown-items-margin-x: var(--burger-padding-x);
         --navbar-items-flex-direction: column;
+        --navbar-items-margin-y: 1em;
         --navbar-items-order: 1;
-        --navbar-items-padding-y: 0.5em;
         --navbar-items-width: 100%;
-        --navbar-links-padding-x: 1em;
+        --navbar-links-padding-x: var(--burger-padding-x);
+        --navbar-overflow: hidden;
     }
 }
 

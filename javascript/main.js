@@ -4,10 +4,11 @@ function start() {
 }
 
 function burger() {
-    const navbar_burger = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar"),
+    navbar_burger = document.getElementById("navbar-burger");
 
     navbar_burger.addEventListener('click', function() {
-        navbar_burger.classList.toggle("is-active");
+        navbar.classList.toggle("is-active");
     });
 }
 
