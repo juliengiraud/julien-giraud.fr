@@ -16,7 +16,7 @@ footer {
 }
 
 .icon {
-    width: 2em;
+    width: 32px;
 }
 
 /**** navbar ****/
@@ -46,7 +46,7 @@ footer {
 }
 
 .is-active .navbar-container {
-    max-height: 500px;
+    max-height: 5000px;
 }
 
 .navbar .brand {
@@ -99,25 +99,51 @@ footer {
 
 .has-dropdown .navbar-items {
     background-color: var(--navbar-bg);
-    border-radius: 6px;
+    border-radius: var(--navbar-dropdown-items-border-radius);
     flex-direction: column;
     margin-top: var(--navbar-dropdown-items-margin-y);
+    margin-left: calc(2 * var(--navbar-dropdown-items-margin-x));
+    margin-right: var(--navbar-dropdown-items-margin-x);
     max-height: 0;
     overflow: hidden;
+    padding-left: var(--navbar-items-padding-x);
+    padding-right: var(--navbar-items-padding-x);
     position: absolute;
     position: var(--navbar-dropdown-items-position);
     transition: var(--navbar-transition);
 }
 
-.navbar .has-dropdown:hover .navbar-items {
-    box-shadow: var(--navbar-items-box-shadow);
-    margin-left: var(--navbar-dropdown-items-margin-x);
-    margin-right: var(--navbar-dropdown-items-margin-x);
-    max-height: 500px;
-    padding-top: var(--navbar-items-padding-y);
-    padding-bottom: var(--navbar-items-padding-y);
-    padding-left: var(--navbar-items-padding-x);
-    padding-right: var(--navbar-items-padding-x);
+
+@media (min-width: 992px) {
+    .navbar .has-dropdown:hover .navbar-items {
+        box-shadow: var(--navbar-items-box-shadow);
+        margin-bottom: var(--navbar-dropdown-items-hover-margin-y);
+        max-height: 5000px;
+        padding-top: var(--navbar-items-padding-y);
+        padding-bottom: var(--navbar-items-padding-y);
+    }
+    .navbar .has-dropdown:hover i.fa-angle-down {
+        transform: rotate(-180deg);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .has-dropdown.is-active .navbar-items {
+        box-shadow: var(--navbar-items-box-shadow);
+        margin-bottom: var(--navbar-dropdown-items-hover-margin-y);
+        max-height: 5000px;
+        padding-top: var(--navbar-items-padding-y);
+        padding-bottom: var(--navbar-items-padding-y);
+    }
+    .navbar .has-dropdown.is-active i.fa-angle-down {
+        transform: rotate(-180deg);
+    }
+}
+
+.navbar i.fa-angle-down {
+    margin-left: var(--navbar-angle-margin-left);
+    margin-right: var(--navbar-angle-margin-right);
+    transition: var(--navbar-transition);
 }
 
 .navbar-item {
@@ -131,10 +157,6 @@ footer {
     border: none;
     height: 2px;
     margin: .5em 0;
-}
-
-.navbar-icon {
-    width: 32px;
 }
 
 
