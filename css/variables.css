@@ -53,15 +53,13 @@
         --navbar-container-margin-y: 0;
         --navbar-dropdown-items-margin-x: var(--burger-padding-x);
         --navbar-dropdown-items-hover-margin-y: 1em;
-        --navbar-items-box-shadow: -8px 8px 8px rgba(10,10,10,.1);
+        --navbar-items-box-shadow: -12px 0px 8px -8px rgba(10,10,10,.1);
         --navbar-items-flex-direction: column;
         --navbar-items-margin-y: 1em;
         --navbar-items-order: 1;
         --navbar-items-width: 100%;
         --navbar-links-padding-x: var(--burger-padding-x);
         --navbar-overflow: hidden;
-
-        --test2: rotate(-180deg);
     }
 }
 

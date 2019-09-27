@@ -6,13 +6,22 @@
 }
 
 body {
-    margin-top: var(--navbar-height);
     min-height: 150vh;
+}
+
+header {
+    height: var(--navbar-height);
 }
 
 footer {
     background-color: blue;
     color: white;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
@@ -27,7 +36,6 @@ footer {
     overflow: var(--navbar-overflow);
     position: fixed;
     top: 0;
-    transition: var(--navbar-transition);
     width: 100%;
 }
 

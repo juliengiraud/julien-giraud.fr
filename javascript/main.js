@@ -20,29 +20,39 @@ function burger() {
 }
 
 function navbar() {
-    var a = 0,
-    currentScrollTop = 0;
+    var a = window.scrollY,
+    currentScrollTop = 0,
+    lastPoint = window.scrollY,
+    lastHeight;
     const navbar = document.querySelector("nav");
 
-    window.addEventListener('scroll', function() {
-        var b = window.scrollY;
+    navbar.style.transform = "translateY(0)";
 
-        if (b == 0) {
-            navbar.classList.remove("down");
-            navbar.classList.add("top");
-            navbar.classList.add("up");
+    window.addEventListener('scroll', function() {
+        var b = window.scrollY,
+        c = b - lastPoint,
+        h = navbar.clientHeight;
+
+        if (h == 0)
+            h = lastHeight;
+        else
+            lastHeight = h;
+
+        if (c > h) {
+            navbar.classList.add("display-none");
+            lastPoint = b - h;
         }
         else {
-            navbar.classList.remove("top");
-            if (b < a) {
-                navbar.classList.remove("down");
-                navbar.classList.add("up");
+            navbar.classList.remove("display-none");
+            if (c < 0) {
+                lastPoint = b;
+                navbar.style.transform = "translateY(0px)";
             }
             else {
-                navbar.classList.remove("up");
-                navbar.classList.add("down");
+                navbar.style.transform = "translateY(" + -c + "px)";
             }
         }
+
         currentScrollTop = b;
         a = currentScrollTop;
     });
