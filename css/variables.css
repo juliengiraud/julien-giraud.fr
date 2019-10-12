@@ -1,6 +1,8 @@
 /* Variables globales */
 
 :root {
+    --global-color: #4a4a4a;
+
     /* navbar */
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
@@ -49,7 +51,8 @@
         --navbar-brand-padding-x: var(--burger-padding-x);
         --navbar-container-flex-wrap: wrap;
         --navbar-container-justify-content: space-between;
-        --navbar-container-margin-x: 1em;
+        --navbar-container-margin-left: calc(10% - var(--navbar-brand-padding-x));
+        --navbar-container-margin-right: 1em;
         --navbar-container-margin-y: 0;
         --navbar-dropdown-items-margin-x: var(--burger-padding-x);
         --navbar-dropdown-items-hover-margin-y: 1em;
