@@ -28,6 +28,10 @@ footer {
     width: 32px;
 }
 
+.brand > .icon {
+    width: 42px;
+}
+
 /**** navbar ****/
 .navbar {
     background-color: var(--navbar-bg);

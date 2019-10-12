@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520">
+
+    <!-- Face jaune -->
+    <polygon points="150 0, 450 0, 600 260, 300 260" fill="#F3F300" />
+
+    <!-- Face verte -->
+    <polygon points="150 0, 300 260, 150 520, 0 260" fill="#00E600" />
+    <polygon points="" fill="#FD8000" />
+
+    <!-- Face orange -->
+    <polygon points="300 260, 600 260, 450 520, 150 520" fill="#EC7700" />
+    <polygon points="" fill="#00E600" />
+
+    <!-- "</>" -->
+    <polygon points="165 26, 195 78, 90 260, 165 390, 135 442, 30 260" fill="#000000" />
+    <polygon points="390 52, 420 52, 435 78, 210 468, 180 468, 165 442" fill="#000000" />
+    <polygon points="435 130, 465 78, 570 260, 450 468, 390 468, 510 260" fill="#000000" />
+</svg>

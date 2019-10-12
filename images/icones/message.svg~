@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>message</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0.466358418%" x2="50%" y2="99.6771365%" id="linearGradient-1">
+            <stop stop-color="#FFDB4A" offset="0%"></stop>
+            <stop stop-color="#FFBB01" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filled" transform="translate(-50.000000, -300.000000)" fill="url(#linearGradient-1)">
+            <g id="message" transform="translate(50.000000, 300.000000)">
+                <path d="
+                    M17.5,13
+                    C16.673,13 16,12.327 16,11.5
+                    C16,10.673 16.673,10 17.5,10
+                    C18.327,10 19,10.673 19,11.5
+                    C19,12.327 18.327,13 17.5,13
+                    M12.5,13
+                    C11.673,13 11,12.327 11,11.5
+                    C11,10.673 11.673,10 12.5,10
+                    C13.327,10 14,10.673 14,11.5
+                    C14,12.327 13.327,13 12.5,13
+                    M7.5,13
+                    C6.673,13 6,12.327 6,11.5
+                    C6,10.673 6.673,10 7.5,10
+                    C8.327,10 9,10.673 9,11.5
+                    C9,12.327 8.327,13 7.5,13
+                    M12.5,0
+                    C5.607,0 6.49480469e-15,5.158 6.49480469e-15,11.5
+                    C6.49480469e-15,13.392 0.517,15.271 1.494,16.935
+                    C2.002,17.799 2.081,18.862 1.71,19.852 L0.032,24.324
+                    C-0.038,24.51 0.009,24.719 0.15,24.857
+                    C0.245,24.951 0.372,25 0.5,25
+                    C0.563,25 0.626,24.988 0.686,24.965 L6.58,22.606
+                    C7.295,22.32 8.082,22.285 8.863,22.502
+                    C10.04,22.832 11.264,23  12.5,23
+                    C19.393,23 25,17.842 25,11.5
+                    C25,5.158 19.393,0 12.5,0
+                " id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
