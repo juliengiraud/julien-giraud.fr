@@ -172,7 +172,7 @@ footer {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (any-hover: hover) {
     .navbar .has-dropdown:hover .navbar-items {
         box-shadow: var(--navbar-items-box-shadow);
         margin-bottom: var(--navbar-dropdown-items-hover-margin-y);
@@ -189,7 +189,7 @@ footer {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px), (any-hover: none) {
     .navbar .has-dropdown.is-active .navbar-items {
         box-shadow: var(--navbar-items-box-shadow);
         margin-bottom: var(--navbar-dropdown-items-hover-margin-y);
