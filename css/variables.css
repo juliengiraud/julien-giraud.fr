@@ -20,8 +20,8 @@
 @media (min-width: 992px) {
     /* Écran "xl" */
     :root {
-        /* navbar burger */
-        --navbar-burger-display: none;
+        /* burger */
+        --burger-display: none;
 
         /* navbar */
         --navbar-angle-margin-left: 0.5em;
@@ -48,7 +48,7 @@
 /* Écran "md" */
 @media (max-width: 991px) {
     :root {
-        /* navbar burger */
+        /* burger */
         --burger-padding-x: 1em;
         --burger-padding-y: 0;
 
