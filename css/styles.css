@@ -39,7 +39,11 @@ footer * {
 .footer-container > div {
     margin-left: 1em;
     margin-right: 1em;
-    width: max-content;
+    width: 100%;
+}
+
+.footer-container > div:not(:last-child) {
+    margin-bottom: 1em;
 }
 
 .logo-footer {
