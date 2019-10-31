@@ -1,18 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" width="364" height="390">
 
-    <!-- Face jaune -->
-    <polygon points="150 0, 450 0, 600 260, 300 260" fill="#F3F300" />
+    <!-- Couleurs
+        rouge : #FF0000
+        bleue : #0000F7
+        orange : #FD8000
+        vert : #00E600
+        jaune : #F3F300
+        noir : #000000
+    -->
 
-    <!-- Face verte -->
-    <polygon points="150 0, 300 260, 150 520, 0 260" fill="#00E600" />
-    <polygon points="" fill="#FD8000" />
+    <!-- Face de gauche -->
+    <polygon points="0 0, 156 90, 156 390, 0 300" fill="#00E600" />
 
-    <!-- Face orange -->
-    <polygon points="300 260, 600 260, 450 520, 150 520" fill="#EC7700" />
-    <polygon points="" fill="#00E600" />
+    <!-- Face de droite -->
+    <polygon points="156 0, 364 0, 364 270, 156 390" fill="#FD8000" />
 
-    <!-- "</>" -->
-    <polygon points="165 26, 195 78, 90 260, 165 390, 135 442, 30 260" fill="#000000" />
-    <polygon points="390 52, 420 52, 435 78, 210 468, 180 468, 165 442" fill="#000000" />
-    <polygon points="435 130, 465 78, 570 260, 450 468, 390 468, 510 260" fill="#000000" />
+    <!-- Face du haut -->
+    <polygon points="0 0, 312 0, 156 90" fill="#F3F300" />
+
+    <!-- J -->
+    <polygon points="104 60, 156 90, 156 390, 0 300, 0 195, 52 225, 52 270, 104 300" fill="#FF0000" />
+
+    <!-- G -->
+    <polygon points="156 90, 312 0, 312 60, 208 120, 208 300, 312 240, 312 180, 260 210, 260 150, 312 120, 364 150, 364 270, 156 390" fill="#0000F7" />
 </svg>
