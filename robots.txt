@@ -3,7 +3,4 @@ Disallow: /index.html
 Disallow: /contact.html
 Disallow: /404.html
 Disallow: /404
-Disallow: /images/icones/
-Allow: /
-Allow /images/
 Sitemap: https://juliengiraud.github.io/sitemap.xml
