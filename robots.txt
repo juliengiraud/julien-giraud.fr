@@ -1,8 +1,10 @@
 User-agent: *
-
 Disallow: /index.html
 Disallow: /contact.html
 Disallow: /404.html
 Disallow: /404
-
+Disallow: /*.svg$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Allow: /images/icones/julien-giraud-developpeur-rubiks-cube.svg
 Sitemap: https://juliengiraud.github.io/sitemap.xml
