@@ -37,9 +37,9 @@ footer * {
 }
 
 .footer-container > div {
+    width: 100%;
     margin-left: 1em;
     margin-right: 1em;
-    width: 100%;
 }
 
 .footer-container > div:not(:last-child) {
@@ -50,10 +50,21 @@ footer * {
     width: 6em;
 }
 
+.footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-copyright > span:first-child {
+    margin-right: 4px;
+}
+
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
 }
 
 .icon {
@@ -89,8 +100,19 @@ footer * {
 }
 
 .service:hover .service-container {
-    background-color: rgb(0, 128, 0);
     transform: translateY(0.5em);
+}
+
+.service:hover.service-email .service-container {
+    background-color: rgb(241, 118, 0);
+}
+
+.service:hover.service-telephone .service-container {
+    background-color: rgb(0, 128, 0);
+}
+
+.service:hover.service-linkedin .service-container {
+    background-color: rgb(1, 112, 172);
 }
 
 .service-title {

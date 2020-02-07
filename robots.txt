@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: https://juliengiraud.github.io/sitemap.xml
+Sitemap: https://www.julien-giraud.fr/sitemap.xml
 
 User-agent: Googlebot-Image
 Disallow: /images/icones/
