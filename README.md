@@ -1,8 +1,8 @@
 # Présentation
 
-Ceci est le projet de mon site personnel statique (pas de langages côté serveur type PHP)
+Ceci est le projet de mon site personnel
 
-Réalisé en HTML, CSS et JavaScript vanilla
+Réalisé en PHP, HTML, CSS et JavaScript vanilla
 
 ## Accès
 
