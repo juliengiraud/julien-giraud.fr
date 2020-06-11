@@ -1,15 +1,101 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="395" height="330">
-<defs/>
-<g id="layer0">
-  <path id="shape0" transform="translate(230.81, 0.582657)" fill="#b9b9b9" d="M95.398 137.235C82.456 137.234 70.7884 129.438 65.8352 117.482C60.882 105.525 63.6186 91.7619 72.769 82.6095L112.369 43.0095C118.615 36.7615 118.615 26.6335 112.369 20.3855C106.038 14.3384 96.071 14.3384 89.74 20.3855L11.314 98.8065L0 87.4955L78.426 9.0705C90.511 -3.0235 111.594 -3.0235 123.679 9.0705C136.173 21.5667 136.173 41.8243 123.679 54.3205L84.079 93.9205C77.8322 100.169 77.8322 110.297 84.079 116.545C90.4104 122.592 100.377 122.592 106.708 116.545L151.997 71.2555L163.309 82.5685L118.02 127.857C112.035 133.88 103.889 137.257 95.398 137.235Z"/>
-  <path id="shape1" transform="translate(138.497, 77.8034)" fill="#de4c3b" d="M111.557 36.2838L33.464 114.484L0 80.5518L77.616 2.34279C80.7401 -0.780931 85.8049 -0.780931 88.929 2.34279L111.557 24.9748C114.678 28.0984 114.678 33.1601 111.557 36.2838Z"/>
-  <path id="shape2" transform="matrix(0.707 -0.707 0.707 0.707 176.467 153.696)" fill="#bb4033" d="M0 0L15.998 0L15.998 23.997L0 23.997Z"/>
-  <path id="shape3" transform="matrix(0.707 -0.707 0.707 0.707 199.105 131.114)" fill="#bb4033" d="M0 0L15.998 0L15.998 24L0 24Z"/>
-  <path id="shape4" transform="translate(23.7799, 179.584)" fill="#cdcdcd" d="M16.97 87.238L0 126.836L39.598 109.866L126.937 22.526L104.208 0Z"/>
-  <path id="shape5" transform="translate(4.60056, 286.618)" fill="#b1b1b1" d="M39.8653 10.426L13.5213 36.769C10.3777 39.7671 5.41602 39.7087 2.3439 36.6374C-0.728218 33.5661 -0.787963 28.6044 2.20931 25.46L27.6653 0Z"/>
-  <rect id="shape6" transform="matrix(0.707 -0.707 0.707 0.707 114.245 170.661)" fill="#f85542" width="25.60000000000pt" height="51.20000000000pt" rx="6.40000000000pt" ry="6.40000000000pt"/>
- </g>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="395"
+   height="330"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="fer-a-souder-reparation.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1613"
+     inkscape:window-height="995"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="0.71515152"
+     inkscape:cx="197.5"
+     inkscape:cy="165"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <defs
+     id="defs2" />
+  <g
+     id="layer0"
+     transform="matrix(-1,0,0,1,398.71956,0)">
+    <path
+       id="shape0"
+       transform="translate(230.81,0.582657)"
+       d="M 95.398,137.235 C 82.456,137.234 70.7884,129.438 65.8352,117.482 60.882,105.525 63.6186,91.7619 72.769,82.6095 l 39.6,-39.6 c 6.246,-6.248 6.246,-16.376 0,-22.624 -6.331,-6.0471 -16.298,-6.0471 -22.629,0 L 11.314,98.8065 0,87.4955 78.426,9.0705 c 12.085,-12.094 33.168,-12.094 45.253,0 12.494,12.4962 12.494,32.7538 0,45.25 l -39.6,39.6 c -6.2468,6.2485 -6.2468,16.3765 0,22.6245 6.3314,6.047 16.298,6.047 22.629,0 l 45.289,-45.2895 11.312,11.313 -45.289,45.2885 c -5.985,6.023 -14.131,9.4 -22.622,9.378 z"
+       inkscape:connector-curvature="0"
+       style="fill:#b9b9b9" />
+    <path
+       id="shape1"
+       transform="translate(138.497,77.8034)"
+       d="M 111.557,36.2838 33.464,114.484 0,80.5518 77.616,2.34279 c 3.1241,-3.123721 8.1889,-3.123721 11.313,0 l 22.628,22.63201 c 3.121,3.1236 3.121,8.1853 0,11.309 z"
+       inkscape:connector-curvature="0"
+       style="fill:#de4c3b" />
+    <path
+       id="shape2"
+       transform="matrix(0.707,-0.707,0.707,0.707,176.467,153.696)"
+       d="M 0,0 H 15.998 V 23.997 H 0 Z"
+       inkscape:connector-curvature="0"
+       style="fill:#bb4033" />
+    <path
+       id="shape3"
+       transform="matrix(0.707,-0.707,0.707,0.707,199.105,131.114)"
+       d="M 0,0 H 15.998 V 24 H 0 Z"
+       inkscape:connector-curvature="0"
+       style="fill:#bb4033" />
+    <path
+       id="shape4"
+       transform="translate(23.7799,179.584)"
+       d="M 16.97,87.238 0,126.836 39.598,109.866 126.937,22.526 104.208,0 Z"
+       inkscape:connector-curvature="0"
+       style="fill:#cdcdcd" />
+    <path
+       id="shape5"
+       transform="translate(4.60056,286.618)"
+       d="M 39.8653,10.426 13.5213,36.769 C 10.3777,39.7671 5.41602,39.7087 2.3439,36.6374 -0.728218,33.5661 -0.787963,28.6044 2.20931,25.46 L 27.6653,0 Z"
+       inkscape:connector-curvature="0"
+       style="fill:#b1b1b1" />
+    <rect
+       id="shape6"
+       transform="matrix(0.707,-0.707,0.707,0.707,114.245,170.661)"
+       width="25.6pt"
+       height="51.200001pt"
+       rx="6.4000001pt"
+       ry="6.4000001pt"
+       x="0"
+       y="0"
+       style="fill:#f85542" />
+  </g>
 </svg>

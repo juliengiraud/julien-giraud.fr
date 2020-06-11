@@ -1,31 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="600">
-    
-    <!-- Couleurs
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520"
+   height="600"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="julien-giraud-developpeur-rubiks-cube.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1613"
+     inkscape:window-height="995"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="0.39333333"
+     inkscape:cx="363.65855"
+     inkscape:cy="181.34354"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <!-- Couleurs
         rouge : #E00000
         bleue : #0000F7
         orange : #FD8000
-        vert : #00E600
+        vert : #3CB400
         jaune : #F3F300
         noir : #000000
     -->
-
-    <!-- Face du haut -->
-    <polygon points="0 150, 260 300, 520 150, 260 0" fill="#F3F300" />
-    
-    <!-- </> -->
-    <polygon points="260 0, 312 30, 260 300, 208 270" fill="#000000" />
-    <polygon points=" 60 150, 221 45, 212  90, 127 145, 195 180, 186 225" fill="#000000" />
-    <polygon points="460 150, 334 75, 325 120, 393 155, 308 210, 299 255" fill="#000000" />
-    
-    <!-- Face de gauche -->
-    <polygon points="0 150, 0 450, 260 600, 260 300" fill="#00E600" />
-    
-    <!-- J -->
-    <polygon points="208 270, 260 300, 260 600, 104 510, 104 405, 156 435, 156 480, 208 510" fill="#E00000" />
-    
-    <!-- Face de droite -->
-    <polygon points="260 600, 260 300, 520 150, 520 450" fill="#FD8000" />
-    
-    <!-- G -->
-    <polygon points="260 300, 416 210, 416 270, 312 330, 312 510, 416 450, 416 390, 364 420, 364 360, 416 330, 468 360, 468 480, 260 600" fill="#0000F7" />
+  <!-- Face du haut -->
+  <polygon
+     points="0 150, 260 300, 520 150, 260 0"
+     fill="#F3F300"
+     id="polygon2" />
+  <!-- </> -->
+  <polygon
+     points="260 0, 312 30, 260 300, 208 270"
+     fill="#000000"
+     id="polygon4" />
+  <polygon
+     points=" 60 150, 221 45, 212  90, 127 145, 195 180, 186 225"
+     fill="#000000"
+     id="polygon6" />
+  <polygon
+     points="460 150, 334 75, 325 120, 393 155, 308 210, 299 255"
+     fill="#000000"
+     id="polygon8" />
+  <!-- Face de gauche -->
+  <polygon
+     points="0 150, 0 450, 260 600, 260 300"
+     fill="#00E600"
+     id="polygon10"
+     style="fill:#3cb400;fill-opacity:1" />
+  <!-- J -->
+  <polygon
+     points="208 270, 260 300, 260 600, 104 510, 104 405, 156 435, 156 480, 208 510"
+     fill="#E00000"
+     id="polygon12" />
+  <!-- Face de droite -->
+  <polygon
+     points="260 600, 260 300, 520 150, 520 450"
+     fill="#FD8000"
+     id="polygon14" />
+  <!-- G -->
+  <polygon
+     points="260 300, 416 210, 416 270, 312 330, 312 510, 416 450, 416 390, 364 420, 364 360, 416 330, 468 360, 468 480, 260 600"
+     fill="#0000F7"
+     id="polygon16" />
 </svg>

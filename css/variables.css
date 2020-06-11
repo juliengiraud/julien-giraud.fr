@@ -7,14 +7,27 @@
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
     --navbar-container-justify-content: space-between;
-    --navbar-container-margin-left: calc(10% - var(--navbar-brand-padding-x));
-    --navbar-container-margin-right: calc(10% - var(--navbar-brand-padding-x));
+    --navbar-container-margin-left: calc(10% - var(--navbar-brand-padding-left));
+    --navbar-container-margin-right: calc(10% - var(--navbar-brand-padding-right));
     --navbar-height: 80px;
     --navbar-items-padding-x: 0;
     --navbar-items-padding-y: 0.5em;
     --navbar-links-hover-decallage: 0.3em;
     --navbar-links-transition: all 0.2s;
+    --navbar-menu-telephone-max-height: 40em;
+    --navbar-sous-menu-max-height: 8em;
     --navbar-transition: cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+
+    /* body -> parcours */
+    --parcours-border-width: 4px;
+    --parcours-padding-left: 1.2em;
+    --parcours-margin-left: 10em;
+    --parcours-position: absolute;
+    --parcours-transform: translateX(calc(-100% - var(--parcours-padding-left) * 2 - var(--parcours-border-width)));
+
+    /* footer */
+    --footer-tiret-content: "-";
+    --footer-tiret-margin-right: 0.25em;
 }
 
 @media (min-width: 992px) {
@@ -25,7 +38,8 @@
 
         /* navbar */
         --navbar-angle-margin-left: 0.5em;
-        --navbar-brand-padding-x: 1em;
+        --navbar-brand-padding-left: 1em;
+        --navbar-brand-padding-right: 2em;
         --navbar-brand-width: max-content;
         --navbar-dropdown-items-border-radius: 6px;
         --navbar-dropdown-items-margin-y: calc(var(--navbar-height) - 20px);
@@ -55,7 +69,8 @@
         /* navbar */
         --navbar-angle-margin-left: auto;
         --navbar-angle-margin-right: 0.6em;
-        --navbar-brand-padding-x: var(--burger-padding-x);
+        --navbar-brand-padding-left: var(--burger-padding-x);
+        --navbar-brand-padding-right: calc(2 * var(--burger-padding-x));
         --navbar-brand-width: calc(100% - 72px);
         --navbar-container-flex-wrap: wrap;
         --navbar-container-margin-right: 1em;
@@ -75,11 +90,24 @@
 /* Écran "sm" */
 @media (max-width: 767px) {
     :root {
+        /* body -> parcours */
+        --parcours-padding-left: 0.8em;
+        --parcours-margin-left: 8.5em;
     }
 }
 
 /* Écran "xs" */
 @media (max-width: 575px) {
     :root {
+        /* footer */
+        --footer-taille-tiret: 100%;
+        --footer-tiret-content: none;
+        --footer-tiret-margin-bottom: 0.4em;
+
+        /* body -> parcours */
+        --parcours-margin-left: 4px;
+        --parcours-position: initial;
+        --parcours-display: flex;
+        --parcours-transform: none;
     }
 }

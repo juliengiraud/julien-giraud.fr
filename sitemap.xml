@@ -2,14 +2,19 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-   <url>
-      <loc>https://www.julien-giraud.fr</loc>
-      <lastmod>2020-02-02</lastmod>
-   </url>
+    <url>
+        <loc>https://www.julien-giraud.fr</loc>
+        <lastmod>11/06/2020</lastmod>
+    </url>
 
-   <url>
-      <loc>https://www.julien-giraud.fr/contact</loc>
-      <lastmod>2020-02-02</lastmod>
-   </url>
+    <url>
+        <loc>https://www.julien-giraud.fr/contact</loc>
+        <lastmod>11/06/2020</lastmod>
+    </url>
+
+    <url>
+        <loc>https://www.julien-giraud.fr/mentions-legales</loc>
+        <lastmod>11/06/2020</lastmod>
+    </url>
 
 </urlset>
