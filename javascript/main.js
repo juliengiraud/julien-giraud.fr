@@ -5,18 +5,20 @@ function start() {
 
 function burger() {
     const navbar = document.getElementById("navbar"),
-    navbar_burger = document.getElementById("navbar-burger"),
-    dropdowns = document.querySelectorAll(".navbar .has-dropdown");
+          navbar_burger = document.getElementById("navbar-burger"),
+          dropdowns = document.querySelectorAll(".navbar .has-dropdown");
 
-    navbar_burger.addEventListener('click', function() {
-        navbar.classList.toggle("is-active");
-    });
-
-    dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('click', function() {
-            dropdown.classList.toggle("is-active");
+    if (navbar_burger)
+        navbar_burger.addEventListener('click', function() {
+            navbar.classList.toggle("is-active");
         });
-    });
+
+    if (dropdowns)
+        dropdowns.forEach(function(dropdown) {
+            dropdown.addEventListener('click', function() {
+                dropdown.classList.toggle("is-active");
+            });
+        });
 }
 
 function navbar() {
