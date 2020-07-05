@@ -6,7 +6,7 @@ Réalisé en PHP, HTML, CSS et Javascript vanilla
 
 ## Accès
 
-Le projet est visible à l'adresse suivante : <https://www.julien-giraud.fr/>
+Le projet est visible à l'adresse suivante : [julien-giraud.fr](https://www.julien-giraud.fr)
 
 ## Inspirations
 
