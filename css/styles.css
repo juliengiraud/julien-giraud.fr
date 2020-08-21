@@ -42,6 +42,88 @@ pre.inline {
     display: inline;
 }
 
+blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: .25em solid #dfe2e5;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.4em;
+}
+
+.color-blue {
+    color: var(--blue);
+}
+
+.color-green {
+    color: var(--green-for-text);
+}
+
+
+/**** Début tooltip ****/
+
+
+span.tooltip {
+    cursor: pointer;
+    overflow: visible;
+    position: relative;
+    white-space: nowrap;
+}
+
+span.tooltip::before,
+span.tooltip::after {
+    transition: var(--navbar-transition);
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: .75rem;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1020;
+    right: auto;
+    bottom: auto;
+    margin-top: -5px;
+    margin-bottom: auto;
+}
+
+span.tooltip::before {
+    background: rgba(74,74,74,0.9);
+    border-radius: 2px;
+    content: attr(data-tooltip);
+    padding: 0.5rem 1rem;
+    top: 0;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, calc(-100% - 10px));
+    height: auto;
+    width: 15rem;
+    max-width: 15rem;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: keep-all;
+}
+
+span.tooltip::after {
+    content: '';
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgba(74,74,74,0.9) transparent transparent transparent;
+    top: -10px;
+    left: 50%;
+    margin-right: auto;
+    margin-left: -5px;
+}
+
+span.tooltip:hover::before,
+span.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+/**** Fin tooltip ****/
+
 
 /**** Début JavaScript -> to_active() ****/
 
@@ -138,6 +220,7 @@ header {
 #navbar a {
     align-items: center;
     display: flex;
+    height: var(--navbar-links-height);
     padding-left: var(--navbar-links-padding-x);
     padding-right: var(--navbar-links-padding-x);
     text-decoration: none;
@@ -147,9 +230,10 @@ header {
 
 #navbar .has-dropdown .navbar-item a {
     font-size: 0.95em;
-    line-height: 2;
     padding-right: calc(var(--navbar-links-padding-x) + 2 * var(--navbar-links-hover-decallage));
     transition: var(--navbar-links-transition);
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 #navbar a:hover {
@@ -201,15 +285,19 @@ header {
 #navbar .navbar-item {
     display: flex;
     flex-wrap: wrap;
-    line-height: 3;
 }
 
-#navbar .navbar-divider::after {
+#navbar .navbar-divider::before {
     content: "";
     background-color: #f5f5f5;
     width: 100%;
     margin: .5em 0;
     padding: 1px;
+}
+
+#navbar .has-dropdown .navbar-item.navbar-divider a {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 @media (min-width: 992px) and (any-hover: hover) {
@@ -236,6 +324,7 @@ header {
         max-height: var(--navbar-sous-menu-max-height);
         padding-top: var(--navbar-items-padding-y);
         padding-bottom: var(--navbar-items-padding-y);
+        margin-top: 0.5em;
     }
     #navbar .has-dropdown.is-active i.fa-angle-down {
         transform: rotate(-180deg);
@@ -422,8 +511,16 @@ section li {
     line-height: 1.4em;
 }
 
-section li:not(:last-child) {
+section ul.active li {
     margin-bottom: 0.5em;
+}
+
+section li > ul {
+    margin-top: 0.5em;
+}
+
+section li > ul > li {
+    margin-bottom: 1em;
 }
 
 section .container {
@@ -503,6 +600,28 @@ section .button-link:hover {
     background-color: var(--global-color);
 }
 
+section .picture-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: var(--picture-text-flex-wrap);
+}
+
+section .picture-text img {
+    margin-right: var(--picture-text-margin-right);
+}
+
+section .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+section .title-container img {
+    margin-right: var(--title-container-img-margin-right);
+    max-width: var(--title-container-img-max-width);
+    height: auto;
+}
+
 /**** Début body -> parcours ****/
 
 section .parcours {
@@ -546,5 +665,138 @@ form .hidden-input {
 }
 
 /**** Fin body -> form ****/
+
+/**** RUBIK'S CUBE ****/
+
+.cube-cover {
+    display: flex;
+    overflow: hidden;
+}
+
+.cube-cover img {
+    overflow: hidden;
+    width: max-content;
+    height: auto;
+}
+
+.cube-info {
+    margin-left: var(--cube-info-margin-left);
+}
+
+.cube-info p {
+    line-height: 1.8;
+}
+
+.moves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.moves li {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.moves li strong {
+    margin-left: 2em;
+    font-size: 1.15em;
+}
+
+.moves li img {
+    margin-bottom: 1em;
+}
+
+.rotate {
+    margin-top: 2em;
+    padding-left: 0;
+}
+
+.rotate li {
+    display: flex;
+    margin-bottom: 2em;
+    flex-wrap: var(--rotate-li-flex-wrap);
+    flex-direction: var(--rotate-li-flex-direction);
+    align-items: var(--rotate-li-align-items);
+}
+
+.rotate li div {
+    display: flex;
+    flex-direction: var(--rotate-div-flex-direction);
+    width: max-content;
+    margin-right: 1.5em;
+    align-items: var(--rotate-li-align-items);
+}
+
+.rotate li div span {
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.rotate li > span {
+    margin-top: var(--rotate-span-margin-top);
+    margin-bottom: var(--rotate-span-margin-bottom);
+}
+
+.cube-algos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.cube-algos li {
+    margin-right: var(--cube-algos-li-margin-right);
+    margin-bottom: 2em;
+    box-shadow: 0px 12px 8px -8px rgba(10,10,10,.1);
+    padding-left: var(--cube-algos-li-padding-x);
+    padding-right: var(--cube-algos-li-padding-x);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.cube-algos li div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    flex-wrap: var(--rotate-li-flex-wrap);
+}
+
+.cube-algos li > div > span {
+    margin-right: 2em;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-bottom: var(--cube-algos-span-margin-button);
+}
+
+.cube-algos li > div > img {
+    max-width: 100%;
+}
+
+.cube-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cube-categorie {
+    width: max-content;
+    max-width: 100%;
+    margin-right: 2em;
+}
+
+.space-arrow {
+    position: absolute;
+    transform: translate(-150%, 2px);
+}
+
+.super-i {
+    margin-top: var(--super-i-margin-top);
+    margin-right: 0.4em;
+    transform: var(--super-i-transform);
+}
+/**** Fin Rubik's Cube ****/
 
 /**** Fin body ****/

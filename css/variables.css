@@ -3,6 +3,14 @@
 :root {
     --global-color: #4a4a4a;
 
+    /* Rubik's Cube colors */
+    --red: #E00000;
+    --blue: #0000F7;
+    --orange: #FD8000;
+    --green: #3CB400;
+    --green-for-text: #226500;
+    --yellow: #F3F300;
+
     /* navbar */
     --navbar-bg: white;
     --navbar-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
@@ -14,9 +22,15 @@
     --navbar-items-padding-y: 0.5em;
     --navbar-links-hover-decallage: 0.3em;
     --navbar-links-transition: all 0.2s;
-    --navbar-menu-telephone-max-height: 40em;
-    --navbar-sous-menu-max-height: 8em;
+    --navbar-menu-telephone-max-height: 42em;
+    --navbar-sous-menu-max-height: 10em;
     --navbar-transition: cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+
+    /* body */
+    --title-container-img-margin-right: 2em;
+    --title-container-img-max-width: 25vw;
+    --picture-text-margin-right: 2em;
+    --picture-text-flex-wrap: nowrap;
 
     /* body -> parcours */
     --parcours-border-width: 4px;
@@ -24,6 +38,14 @@
     --parcours-margin-left: 10em;
     --parcours-position: absolute;
     --parcours-transform: translateX(calc(-100% - var(--parcours-padding-left) * 2 - var(--parcours-border-width)));
+
+    /* body -> cube */
+    --cube-info-margin-left: 4em;
+    --rotate-span-margin-top: 2.5em;
+    --cube-algos-li-margin-right: 2em;
+    --cube-algos-li-padding-x: 2em;
+    --rotate-div-flex-direction: column-reverse;
+    --super-i-margin-top: 1em;
 
     /* footer */
     --footer-tiret-content: "-";
@@ -82,17 +104,33 @@
         --navbar-items-margin-y: 1em;
         --navbar-items-order: 1;
         --navbar-items-width: 100%;
+        --navbar-links-height: 3em;
         --navbar-links-padding-x: var(--burger-padding-x);
         --navbar-overflow: hidden;
+
+        /* body -> cube */
+        --cube-info-margin-left: 2em;
     }
 }
 
 /* Écran "sm" */
 @media (max-width: 767px) {
     :root {
+        /* body */
+        --picture-text-margin-right: 1em;
+
         /* body -> parcours */
         --parcours-padding-left: 0.8em;
         --parcours-margin-left: 8.5em;
+
+        /* body -> cube */
+        --cube-info-margin-left: 0;
+        --rotate-li-flex-wrap: wrap;
+        --rotate-span-margin-top: 0;
+        --rotate-span-margin-bottom: 2em;
+        --cube-algos-li-margin-right: 0;
+        --cube-algos-li-padding-x: 10%;
+        --cube-algos-span-margin-button: 1em;
     }
 }
 
@@ -104,10 +142,23 @@
         --footer-tiret-content: none;
         --footer-tiret-margin-bottom: 0.4em;
 
+        /* body */
+        --title-container-img-margin-right: 1.2em;
+        --title-container-img-max-width: 20vw;
+        --picture-text-flex-wrap: wrap;
+
         /* body -> parcours */
         --parcours-margin-left: 4px;
         --parcours-position: initial;
         --parcours-display: flex;
         --parcours-transform: none;
+
+        /* body -> cube */
+        --rotate-li-flex-direction: column;
+        --rotate-li-align-items: center;
+        --rotate-div-flex-direction: row-reverse;
+        --rotate-span-margin-top: 1em;
+        --super-i-margin-top: 0.5em;
+        --super-i-transform: rotateZ(90deg) translate(-11px, 50px);
     }
 }

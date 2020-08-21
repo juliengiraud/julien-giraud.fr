@@ -4,7 +4,7 @@ $title = "Contact - Julien Giraud | Développeur informatique";
 $noindex = false;
 $description = "Vous pouvez me contacter par mail, téléphone ou en m'ajoutant sur LinkedIn !";
 $keywords = "contact, Julien Giraud, étudiant, Lyon 1, mail, e-mail, message, LinkedIn, téléphone";
-$canonical = "/contact"; // "" -> index.php
+$canonical = "contact";
 
 require_once("header.php");
 
