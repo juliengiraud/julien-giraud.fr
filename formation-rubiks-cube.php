@@ -1,7 +1,7 @@
 <?php
 
 $title = "Le guide complet sur la Méthode Fridrich - Julien Giraud";
-$noindex = true;
+$noindex = false;
 $description = "Tout ce qu'il vous faut pour résoudre le Rubik's Cube 3×3×3 à l'aide de la méthode Fridrich et vous lancer dans le Speedcubing.";
 $keywords = "Rubik's cube, guide, méthode, Fridrich, méthode Fridrich, Jessica Fridrich, apprentissage, algorithmes, CFOP, croix, F2L, OLL, PLL, exemple, astuce, speedcubing, langage universel";
 $canonical = "formation-rubiks-cube";
