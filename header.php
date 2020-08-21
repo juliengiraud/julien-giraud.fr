@@ -1,6 +1,6 @@
 <?php
 
-$adresse = file_get_contents("config");
+$adresse = file_get_contents("config.txt");
 $lastupdate = "10/08/2020";
 
 ?>
