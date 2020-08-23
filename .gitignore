@@ -1,4 +1,4 @@
-sitemap.xml
+sitemap*.xml
 robots.txt
-config
+config.txt
 mise-en-prod.sh
