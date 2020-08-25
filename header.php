@@ -3,6 +3,12 @@
 $adresse = file_get_contents("config.txt");
 $lastupdate = "10/08/2020";
 
+$styles_name = ["fonts", "icons", "normalize", "variables", "global", "styles"];
+$styles = "";
+foreach ($styles_name as $style) {
+  $styles .= file_get_contents("css/" . $style . ".css");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +26,7 @@ $lastupdate = "10/08/2020";
     <link rel="shortcut icon" href="<?= $adresse ?>/images/julien-giraud-initiales.png">
 
     <?php /* CSS */ ?>
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/icons.css">
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/variables.css">
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/global.css">
-    <link rel="stylesheet" type="text/css" href="<?= $adresse ?>/css/styles.css">
+    <style><?= $styles ?></style>
 
     <?php /* Javascript */ ?>
     <script src="<?= $adresse ?>/javascript/main.js" async></script>
