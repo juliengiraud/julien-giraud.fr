@@ -6,8 +6,12 @@ $lastupdate = "10/08/2020";
 $styles_name = ["fonts", "icons", "normalize", "variables", "global", "styles"];
 $styles = "";
 foreach ($styles_name as $style) {
-  $styles .= file_get_contents("css/" . $style . ".css");
+  $line = file_get_contents("css/" . $style . ".css");
+  $styles .= $line;
 }
+
+$styles = preg_replace('/\n|\s\s/', "", $styles);
+
 
 ?>
 
