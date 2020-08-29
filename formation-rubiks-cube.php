@@ -1277,7 +1277,7 @@ require_once("header.php");
             </div>
             <span>
               U<i class="fa fa-sm fa-long-arrow-right"></i>F U D R D' L D R' U' D' R U L' U' R'
-              <div class="test">
+              <div class="tooltip">
                 <i class="ml-4 fa fa-1x fa-question-circle"></i>
                 <span>Vous avez le choix entre plusieurs algorithmes</span>
               </div><br>
@@ -1333,7 +1333,7 @@ require_once("header.php");
             </div>
             <span>
               R' U2 R U R' d2 R U' L U R'
-              <div class="test">
+              <div class="tooltip">
                 <i class="ml-4 fa fa-1x fa-question-circle"></i>
                 <span>Vous avez le choix entre plusieurs algorithmes</span>
               </div><br>
