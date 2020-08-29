@@ -1153,9 +1153,10 @@ require_once("header.php");
             </div>
             <span>
               U2 R U2 R D R' U2 R D' R2
-              <!-- <span class="ml-4 tooltip" data-tooltip="Vous avez le choix entre plusieurs algorithmes">
-                <i class="fa fa-1x fa-question-circle"></i>
-              </span> --> <br>
+              <div class="tooltip">
+                <i class="ml-4 fa fa-1x fa-question-circle"></i>
+                <span>Vous avez le choix entre plusieurs algorithmes</span>
+              </div><br>
               R U2 R' U' R U R' U' R U R' U' R U' R'
             </span>
           </li>
@@ -1276,9 +1277,10 @@ require_once("header.php");
             </div>
             <span>
               U<i class="fa fa-sm fa-long-arrow-right"></i>F U D R D' L D R' U' D' R U L' U' R'
-              <!-- <span class="ml-4 tooltip" data-tooltip="Vous avez le choix entre plusieurs algorithmes">
-                <i class="fa fa-1x fa-question-circle"></i>
-              </span> --> <br>
+              <div class="test">
+                <i class="ml-4 fa fa-1x fa-question-circle"></i>
+                <span>Vous avez le choix entre plusieurs algorithmes</span>
+              </div><br>
               D<i class="fa fa-sm fa-long-arrow-right"></i>F U R' U' L U R U' r2 U' R U L U' R' U<br>
               l' U' L' U R U' L U R' U' L U R U' L' U
             <span>
@@ -1331,9 +1333,10 @@ require_once("header.php");
             </div>
             <span>
               R' U2 R U R' d2 R U' L U R'
-              <!-- <span class="ml-4 tooltip" data-tooltip="Vous avez le choix entre plusieurs algorithmes">
-                <i class="fa fa-1x fa-question-circle"></i>
-              </span> --> <br>
+              <div class="test">
+                <i class="ml-4 fa fa-1x fa-question-circle"></i>
+                <span>Vous avez le choix entre plusieurs algorithmes</span>
+              </div><br>
               R<i class="fa fa-sm fa-long-arrow-right"></i>F R<i class="fa fa-sm fa-long-arrow-right"></i>F L' U' L F L' U' L U L F' L2 U L U
             </span>
           </li>
