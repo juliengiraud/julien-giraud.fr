@@ -1,5 +1,10 @@
 <?php
 
+require_once('../../api/config/config.php');
+require_once(PATH_SERVICE . '/VisitService.php');
+$visitService = new VisitService();
+$visitService->saveCurrentVisit();
+
 $fileSrc = 'https://github.com/juliengiraud/Rubik-s_Cube/raw/master/M%C3%A9thode%20Fridrich/M%C3%A9thode_Fridrich.pdf';
 $tmpFile = 'guide-methode-fridrich.pdf';
 $fileName = 'Guide méthode Fridrich.pdf';

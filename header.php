@@ -1,5 +1,10 @@
 <?php
 
+require_once('../api/config/config.php');
+require_once(PATH_SERVICE . '/VisitService.php');
+$visitService = new VisitService();
+$visitService->saveCurrentVisit();
+
 $adresse = file_get_contents("config.txt");
 $lastupdate = "10/08/2020";
 
