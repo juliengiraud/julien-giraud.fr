@@ -5,14 +5,14 @@ require_once(PATH_SERVICE . '/VisitService.php');
 $visitService = new VisitService();
 $visitService->saveCurrentVisit();
 
-$adresse = file_get_contents("config.txt");
-$lastupdate = "10/08/2020";
+$adresse = parse_ini_file("config.ini")['url'];
+$lastupdate = "14/11/2020";
 
 $styles_name = ["fonts", "icons", "normalize", "variables", "global", "styles"];
 $styles = "";
 foreach ($styles_name as $style) {
-  $line = file_get_contents("css/" . $style . ".css");
-  $styles .= $line;
+    $line = file_get_contents("css/" . $style . ".css");
+    $styles .= $line;
 }
 
 $styles = preg_replace('/\n|\s\s/', "", $styles);
@@ -24,7 +24,7 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
 
 <!-- Bienvenue dans mon code, je vous souhaite une bonne lecture ! -->
 
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
   <head>
     <?php /* Site */ ?>
     <meta charset="utf-8">
@@ -33,6 +33,13 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
     <meta name="language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?= $adresse ?>/images/julien-giraud-initiales.png">
+
+    <?php /* og:data properties */ ?>
+    <meta property="og:title" content="Portfolio - Julien Giraud" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?= $adresse ?>" />
+    <meta property="og:image" content="<?= $adresse ?>/images/julien-giraud-developpeur-rubiks-cube.png"/>
+    <meta property="og:description" content="<?= $description ?>" />
 
     <?php /* CSS */ ?>
     <style><?= $styles ?></style>

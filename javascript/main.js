@@ -124,7 +124,7 @@ function sleep(ms) {
 
 function scrollTop() {
   var button = document.getElementById("scrollTop");
-  if (button === undefined) {
+  if (button === undefined || button === null) {
     return;
   }
   button.addEventListener('click', async () => {

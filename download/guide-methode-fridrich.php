@@ -24,4 +24,3 @@ header('Content-Length: ' . filesize($tmpFile));
 readfile($tmpFile);
 unlink($tmpFile);
 
-?>
