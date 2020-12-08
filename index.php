@@ -91,8 +91,12 @@ require_once("header.php");
                 <p>Après le Bac j'ai intégré le DUT info de la Doua (IUT Lyon 1) où j'ai commencé à étudier différents aspects de l'informatique par la <strong>pratique</strong>. J'ai pu emmagasiné un maximum de connaissances techniques et générales car l'informatique ne représente que 50% de l'apprentissage. Aussi j'ai beaucoup gagné en expérience à la suite des <strong>5 mois</strong> de développement web que j'ai réalisé chez Influactive pour clôturer cette formation.</p>
             </li>
             <li>
-                <div><span class="ml-1">2019 / 2020</span><h3>L3 informatique</h3></div>
-                <p>Dans la continuité du DUT j'ai réalisé une 3<sup>ème</sup> année de Licence informatique générale à Lyon 1. J'ai pu améliorer mon niveau de pratique dans tous les domaines, en plus de l'enrichir d'un bagage <strong>théorique</strong> conséquent. Enfin, mes différentes options ont permis de confirmer mon goût pour les problèmes d'<strong>optimisation combinatoire</strong>, et renforcer mon intérêt pour l'<strong>intelligence artificielle</strong>.</p>
+                <div><span class="ml-1">2019 / 2020</span><h3>Licence informatique</h3></div>
+                <p>Dans la continuité du DUT j'ai réalisé une 3<sup>ème</sup> année de Licence informatique générale à Lyon 1. J'ai pu améliorer mon niveau de pratique dans tous les domaines, en plus de l'enrichir d'un bagage <strong>théorique</strong> conséquent. Enfin, mes différentes options ont permis de confirmer mon goût pour les problèmes d'<strong>optimisation combinatoire</strong>, et renforcer mon intérêt pour l'<strong>intelligence artificielle</strong> (IA).</p>
+            </li>
+            <li>
+                <div><span class="ml-1">2020 / 2021</span><h3>Master informatique en alternance (M1)</h3></div>
+                <p>Je suis actuellement en première année de Master informatique à Lyon 1 et alternant <strong>développeur full stack</strong> chez <a href="https://www.finalgo.fr/" title="Site de Finalgo" rel="help noopener noreferrer" target="_blank">Finalgo</a> (super startup !). Malheureusement cette alternance n'est pas compatible avec mon projet de <strong>spécialisation en IA</strong> pour le M2, elle devrait donc prendre fin au bout d'un an.</p>
             </li>
         </ul>
     </div>
