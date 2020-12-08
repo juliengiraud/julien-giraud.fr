@@ -130,13 +130,14 @@ require_once("header.php");
  * Peut-être l'effet bulle-zoom d'eye tech care sur un fer à souder
  * Pas encore d'image de moi en bricoleur ici, des outils ou genre image bricolage bank d'images
 */
-?>
-<section class="pb-0">
+
+/*<section class="pb-0">
     <div class="container">
         <h2>Réparations électroniques</h2>
         <p>Je suis loin d'être au niveau d'un ingénieur en électronique, mais je me débrouille plutôt bien avec une caisse à outils et un fer à souder ! Depuis plusieurs années je donne une seconde vie à des objets divers, il est étonnant de voir tout ce qu'on peut réparer sans être un professionnel du milieu.</p>
     </div>
 </section>
+*/?>
 
 <?php
 

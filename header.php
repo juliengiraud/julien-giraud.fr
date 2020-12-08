@@ -92,9 +92,9 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
                 <i class="fa fa-angle-down fa-lg bold"></i>
               </a>
               <ul class="navbar-items">
-                <li class="navbar-item">
+                <?php /*<li class="navbar-item">
                   <a href="<?= $adresse ?>/expositions-rubiks-cube" title="Stand de speedcubing">Expositions - Jeux M'amuse</a>
-                </li>
+                </li>*/ ?>
                 <li class="navbar-item">
                   <a href="<?= $adresse ?>/formation-rubiks-cube" title="Consulter mon guide">Guide méthode Fridrich</a>
                 </li>
@@ -106,12 +106,12 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
               </ul>
             </li>
 
-            <li class="navbar-item">
+            <?php /*<li class="navbar-item">
               <a href="<?= $adresse ?>/reparations" title="Mes réparations">
                 <img src="<?= $adresse ?>/images/icones/fer-a-souder-reparation.svg" alt="icone prise electrique" class="icon mr-2">
                 Réparations
               </a>
-            </li>
+            </li>*/ ?>
 
             <li class="navbar-item">
               <a href="<?= $adresse ?>/contact" title="Me contacter">
