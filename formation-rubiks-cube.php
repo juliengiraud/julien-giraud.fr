@@ -25,7 +25,7 @@ require_once("header.php");
       </div>
       <div class="cube-info">
         <span class="mt-4">Réalisé par <strong>Julien Giraud</strong></span>
-        <p><a href="https://github.com/juliengiraud/Rubik-s_Cube/tree/master/M%C3%A9thode%20Fridrich" title="Ouvrir les sources du guide sur GitHub" rel="help noopener noreferrer" target="_blank">Sources et historique du guide</a><br>
+        <p><a href="https://github.com/juliengiraud/Methode-Fridrich" title="Ouvrir les sources du guide sur GitHub" rel="help noopener noreferrer" target="_blank">Sources et historique du guide</a><br>
         <a href="https://www.youtube.com/julien-craf" title="Chaîne YouTube" rel="author noopener noreferrer" target="_blank">Chaîne YouTube</a><br>
         Dernière modification : 10/08/2020</p>
       </div>
