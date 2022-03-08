@@ -26,7 +26,7 @@ require_once("header.php");
       <div class="cube-info">
         <span class="mt-4">Réalisé par <strong>Julien Giraud</strong></span>
         <p><a href="https://github.com/juliengiraud/Methode-Fridrich" title="Ouvrir les sources du guide sur GitHub" rel="help noopener noreferrer" target="_blank">Sources et historique du guide</a><br>
-        <a href="https://www.youtube.com/julien-craf" title="Chaîne YouTube" rel="author noopener noreferrer" target="_blank">Chaîne YouTube</a><br>
+        <?php /* <a href="https://www.youtube.com/julien-craf" title="Chaîne YouTube" rel="author noopener noreferrer" target="_blank">Chaîne YouTube</a><br> */ ?>
         Dernière modification : 10/08/2020</p>
       </div>
     </div>
@@ -360,15 +360,15 @@ require_once("header.php");
     <h2>Méthode Fridrich : Astuces et conseils d'apprentissage</h2>
     <blockquote>L'apprentissage des algorithmes demande beaucoup de temps et une pratique <strong>régulière</strong> afin de ne pas les oublier. Il n'existe pas de technique miracle pour apprendre les formules, si vous avez déjà votre méthode d'apprentissage mes conseils ne devraient pas beaucoup vous aider. Je ne suis pas expert en méthodes d'apprentissage mais je peux vous expliquer celle que j'ai trouvée. L'idée est de repérer les mouvements de base afin de décomposer les algorithmes "complexes" (plus de 4 mouvements) en une suite de quelques mouvements de base (de 2 à 4 mouvements).</blockquote>
 
-    <p>Pour commencer il faut expliquer ce que j'appelle un mouvement de base. Lorsqu'on regarde des algorithmes, on peut les regrouper en plusieurs suites de mouvements très similaires du type <span class="color-blue">M1 M2 M1' M2'</span> qui permet de faire l'<span class="color-blue">action</span> de l'algorithme, combiné avec des suites de <span class="color-green">transition</span> comme <span class="color-green">M1 M2</span> ou <span class="color-green">M1 M2 M1'</span> qui permettent de se placer en position d'<span class="color-blue">action</span>.<br>
+    <p>Pour commencer il faut expliquer ce que j'appelle un mouvement de base. Lorsqu'on regarde des algorithmes, on peut les regrouper en plusieurs suites de mouvements très similaires du type <span class="color-blue">M1 M2 M1' M2'</span> qui permet de faire l'<span class="color-blue">action</span> de l'algorithme, combiné avec des suites de <span class="color-green">transitions</span> comme <span class="color-green">M1 M2</span> ou <span class="color-green">M1 M2 M1'</span> qui permettent de se placer en position d'<span class="color-blue">action</span>.<br>
     Dans presque la totalité des cas, M1 et M2 appartiennent à des faces consécutives par exemple R U, D F, L B... Il est donc très rare d'avoir L R, U D ou F B.</p>
 
     <p>Pour vous montrer le fonctionnement de cette technique nous allons utiliser l'algorithme suivant.<br>
     <br>
     <span class="color-blue">R U R' U'</span> / <span class="color-green">R' F</span> / <span class="color-green">R2 U'</span> / <span class="color-blue">R' U' R U</span> / <span class="color-green">R' F'</span><br>
     <br>
-    Ici le vert (gras) représente les suites de transition et le bleu les suites d'action. Il peut y avoir plusieurs façon de découper l'algorithme, je trouve que celle-ci représente bien son fonctionnement.<br>
-    <span class="color-blue">R U R' U'</span> est l'une des suites des plus utilisées et on peut voir les formes de transition <span class="color-green">M1 M2</span> / <span class="color-green">M1 M2'</span> avec <span class="color-green">R' F</span> / <span class="color-green">R' F'</span> qui est facilement mémorisable. Une fois qu'on a mémorisé les emplacements des suites d'action, très répétitives, et l'emplacement avec la logique des transitions, on peut facilement se souvenir d'un algorithme.<br>
+    Ici le vert représente les suites de transitions et le bleu les suites d'actions. Il peut y avoir plusieurs façon de découper l'algorithme, je trouve que celle-ci représente bien son fonctionnement.<br>
+    <span class="color-blue">R U R' U'</span> est l'une des suites des plus utilisées et on peut voir les formes de transition <span class="color-green">M1 M2</span> / <span class="color-green">M1 M2'</span> avec <span class="color-green">R' F</span> / <span class="color-green">R' F'</span> qui est facilement mémorisable. Une fois qu'on a mémorisé les emplacements des suites d'actions, très répétitives, et l'emplacement avec la logique des transitions, on peut facilement se souvenir d'un algorithme.<br>
     <br>
     Cet exemple était assez complexe donc je vous propose un exemple plus simple.<br>
     <br>

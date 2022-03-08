@@ -1,6 +1,6 @@
 <?php
 
-$title = "Erreur 404 - Julien Giraud | Développeur informatique";
+$title = "Erreur 404 - Julien Giraud | Développeur full stack";
 $noindex = true;
 $description = "";
 $keywords = "";

@@ -12,7 +12,7 @@ RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
 
 
 # 404 error
-ErrorDocument 404 /404.php
+ErrorDocument 404 https://github.com/juliengiraud
 
 # Disable indexing on folders and files
 Options -Indexes

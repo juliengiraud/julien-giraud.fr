@@ -1,6 +1,6 @@
 <?php
 
-$title = "Mentions légales - Julien Giraud | Développeur informatique";
+$title = "Mentions légales - Julien Giraud | Développeur full stack";
 $noindex = false;
 $description = "Mentions légales du site julien-giraud.fr.";
 $keywords = "Julien Giraud, mentions légales, OVH, hébergeur";

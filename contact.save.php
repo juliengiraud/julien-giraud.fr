@@ -1,7 +1,7 @@
 <?php
 
-$title = "Contact - Julien Giraud | Développeur informatique";
-$noindex = false;
+$title = "Contact - Julien Giraud | Développeur full stack";
+$noindex = true;
 $description = "Vous pouvez me contacter par mail, téléphone ou en m'ajoutant sur LinkedIn !";
 $keywords = "contact, Julien Giraud, étudiant, Lyon 1, mail, e-mail, message, LinkedIn, téléphone";
 $canonical = "contact";

@@ -1,7 +1,7 @@
         <footer>
             <div class="footer-container">
                 <div>
-                    <span class="">Julien Giraud | Développeur informatique</span>
+                    <span class="">Julien Giraud | Développeur full stack</span>
                 </div>
                 <div class="footer-logo">
                     <a href="https://github.com/juliengiraud" title="Ma page GitHub" rel="author noopener noreferrer" target="_blank">
@@ -18,7 +18,7 @@
                 </div>
                 <div class="footer-copyright">
                     <span class="tiret-footer">© Tous droits réservés</span>
-                    <span title="Dernière mise à jour du site : <?= $lastupdate ?>">2019 / 2020</span>
+                    <span title="Dernière mise à jour du site : <?= $lastupdate ?>">2019 / <?= date("Y") ?></span>
                 </div>
                 <div class="mentions-footer">
                     <a href="<?= $adresse ?>/mentions-legales" title="Consulter les mentions légales">Mentions légales</a>
