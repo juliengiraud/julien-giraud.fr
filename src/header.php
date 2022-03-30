@@ -1,12 +1,7 @@
 <?php
 
-require_once('../api/config/config.php');
-require_once(PATH_SERVICE . '/VisitService.php');
-$visitService = new VisitService();
-$visitService->saveCurrentVisit();
-
-$adresse = parse_ini_file("config.ini")['url'];
-$lastupdate = "18/12/2021"; // dd/mm/yyyy
+$adresse = $_ENV["BASE_URL"];
+$lastupdate = "28/03/2022"; // dd/mm/yyyy
 
 $styles_name = ["fonts", "icons", "normalize", "variables", "global", "styles"];
 $styles = "";
@@ -56,7 +51,7 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
     <header>
       <nav id="navbar" class="navbar up">
         <div class="navbar-container">
-          <a class="brand" href="<?= $adresse ?>" title="Accueil portfolio">
+          <a class="brand" href="<?= $_ENV["BASE_URL"] ?>/404">
             <img src="<?= $adresse ?>/images/julien-giraud-developpeur-rubiks-cube.svg" alt="icone accueil" class="icon mr-4">
             Accueil
           </a>

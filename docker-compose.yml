@@ -1,0 +1,36 @@
+version: "3.4"
+
+volumes:
+  postgres-data:
+  src:
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/default/htdocs
+    environment:
+      - BASE_URL=.
+
+  db:
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=test_docker_php_password
+      - POSTGRES_USER=test_docker_php_user
+      - POSTGRES_DB=test_docker_php_db
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  nginx:
+    image: devilbox/nginx-stable
+    environment:
+      - PHP_FPM_ENABLE=1
+      - PHP_FPM_SERVER_ADDR=php
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/default/htdocs

@@ -440,6 +440,14 @@
     padding-bottom: 4em;
 }
 
+.no-decoration {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 /* Écran "xl" */
 @media (min-width: 992px) {
 }
