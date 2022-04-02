@@ -12,7 +12,8 @@ services:
     volumes:
       - ./src:/var/www/default/htdocs
     environment:
-      - BASE_URL=.
+      - BASE_URL=https://server.julien-giraud.fr
+      # - BASE_URL=http://localhost:82
 
   db:
     image: postgres:12
