@@ -31,6 +31,6 @@ services:
       - PHP_FPM_ENABLE=1
       - PHP_FPM_SERVER_ADDR=php
     ports:
-      - 80:80
+      - 82:80
     volumes:
       - ./src:/var/www/default/htdocs
