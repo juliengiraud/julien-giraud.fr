@@ -24,6 +24,7 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
     <meta name="copyright" content="<?= $adresse ?>">
     <meta name="language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php /* <meta name="info" value="<?= json_encode($_ENV) ?>" > */ ?>
     <link rel="shortcut icon" href="<?= $adresse ?>/images/julien-giraud-initiales.png">
 
     <?php /* og:data properties */ ?>
@@ -51,7 +52,7 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
     <header>
       <nav id="navbar" class="navbar up">
         <div class="navbar-container">
-          <a class="brand" href="<?= $_ENV["BASE_URL"] ?>/404">
+          <a class="brand" href="<?= $_ENV["BASE_URL"] ?>/">
             <img src="<?= $adresse ?>/images/julien-giraud-developpeur-rubiks-cube.svg" alt="icone accueil" class="icon mr-4">
             Accueil
           </a>
@@ -120,3 +121,4 @@ $styles = preg_replace('/\n|\s\s/', "", $styles);
         </div>
       </nav>
     </header>
+	

@@ -18,8 +18,7 @@ require_once("header.php");
 
         <h3>Créateur du site</h3>
         <p>Ce site a été crée par Julien GIRAUD :<br>
-        <a href="tel:+33648227168" title="Téléphone Julien Giraud" rel="noopener noreferrer" target="_blank">06 48 22 71 68</a><br>
-        <a href="mailto:contact@julien-giraud.fr" title="E-mail Julien Giraud" rel="noopener noreferrer" target="_blank">contact@julien-giraud.fr</a></p>
+        <a href="mailto:giraud740@gmail.com" title="E-mail Julien Giraud" rel="noopener noreferrer" target="_blank">giraud740@gmail.com</a></p>
 
         <h3>Hébergeur du site</h3>
         <p>Ce site est hébergé chez OVH :<br>

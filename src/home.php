@@ -1,31 +1,21 @@
 <?php
-
-// $dest = "." . $_ENV["REQUEST_URI"] . ".php";
-
-// if (file_exists($dest)) {
-//     include_once($dest);
-// } else if ($_ENV["REQUEST_URI"] == "/") {
-//     include_once("home.php");
-// } else {
-//     header("Location: " . $_ENV["BASE_URL"] . "/404", true, 301);
-// }
-
+ 
 $title = "Accueil - Julien Giraud | Développeur full stack";
 $noindex = false;
 $description = "";
 $keywords = "";
 $canonical = "";
-
+ 
 require_once("header.php");
-
+ 
 ?>
-
+ 
 <section>
     <div class="container-center">
         <h1>Bienvenue<br>Où voulez-vous aller ?</h1>
     </div>
 </section>
-
+ 
 <section>
     <div class="container-center">
         <div class="services">
@@ -50,7 +40,7 @@ require_once("header.php");
         </div>
     </div>
 </section>
-
+ 
 <?php
-
+ 
 require_once("footer.php");
