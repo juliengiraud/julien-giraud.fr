@@ -1,5 +1,2 @@
 User-agent: *
 Sitemap: https://julien-giraud.fr/sitemap.xml
-
-User-agent: Googlebot-Image
-Disallow: /images/icones/
